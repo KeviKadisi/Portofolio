@@ -36,7 +36,7 @@ const  App =()=> {
        </div>
 
        <ul className={classes['nav-links']}>
-       <li className={classes.links}><a href="/C:/Users/Kevi/Desktop.pdf"
+       <li className={classes.links}><a href="file:///C:/Users/Kevi/Desktop/Kevin's%20Resume%20The%20One.pdf"
         download="Kevin's Resume The One.pdf">My Resume</a>
         </li>
         <li className={classes.link}><a href='#'>Home</a></li>
