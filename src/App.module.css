@@ -98,15 +98,11 @@ header .content h1{
 header .content h1 span{
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #fff;
-}header .content h2 {
+}
+header .content p {
  color: #fff;
 }
-header .content ul{
- margin-bottom: 2rem;
-  color: #ccc;
-  list-style: none;
 
-}
 header .image{
   position: relative;
 

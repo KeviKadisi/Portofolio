@@ -8,14 +8,7 @@ import image from  "../src/header.png";
 const  App =()=> {
  
   
-   const handleClick =()=>{
-    window.scrollTo({
-      top: 680, // Scroll to the top of the window
-      left: 0, // Scroll to the left of the window
-      behavior: 'smooth', // Use smooth scrolling animation
-    });
   
-   };
    const handle2Click=() =>{
     window.scrollTo({
       top: 2000, // Scroll to the top of the window
@@ -43,12 +36,14 @@ const  App =()=> {
        </div>
 
        <ul className={classes['nav-links']}>
+       <li className={classes.link}><a href="file:///C:/Users/Kevi/Desktop/Kevin's%20Resume%20The%20One.pdf"
+        download="Kevin's Resume The One.pdf">My Resume</a>
+        </li>
         <li className={classes.link}><a href='#'>Home</a></li>
-        <li className={classes.link}><a onClick={handleClick} href='#'>Features</a></li>
         <li className={classes.link}><a onClick={handle2Click} href='#'>About</a></li>
        </ul>
-       <select 
        
+       <select 
        onChange={projectFilterHandler}
        name="project"
        id="myDropdown" 
@@ -56,6 +51,7 @@ const  App =()=> {
        <option  value="#" 
        defaultValue > My project</option>
        <option value="https://car-management-7gye.vercel.app/" >Car-Management </option>
+       
        </select>
       
        
@@ -68,22 +64,14 @@ const  App =()=> {
        <span className={classes.blur} ></span>
        <span className={classes.blur} ></span>
        <h1>Hi, I'm <span>Kevi</span>, Web Developer</h1>
-       <h2>My knowledge:</h2>
-       <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>FlexBox</li>
-        <li>ReactJS</li>
-        <li>DOM</li>
-        <li>Bootstrap</li>
-        <li>API</li>
-        </ul>
+      <p>Enthusiastic and detail-oriented junior web developer with a passion for creating modern, responsive, and user-friendly websites. Eager to contribute to a dynamic team, applying my technical skills and collaborative mindset to deliver high-quality web solutions.</p> 
+       
        
     </div>
     <div className={classes.image} >
       <img src={image}></img>
     </div>
-    Element to scroll to
+ 
   </header>
 
 
