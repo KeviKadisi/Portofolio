@@ -40,6 +40,24 @@ nav{
   padding-bottom: 0.75rem;
   color: #fff;
 }
+.links a{
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+.links a::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1d4ed8;
+  transition: all 0.3s ease ;
+}
+.links a:hover::after{
+  width: 70%;
+}
 .link a::after{
   content: '';
   position: absolute;
@@ -138,7 +156,7 @@ header .image img{
   
 }
 @media (width < 900px ){
-  .nav-links{
+  .link{
     display: none;
   }
   header{
